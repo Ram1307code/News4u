@@ -1,8 +1,8 @@
 import { getAIResponse, askAI } from "./ai.js";
 import { formatResponse } from "./utils.js";
 
-export async function processNews(text) {
-  const aiData = await getAIResponse(text);
+export async function processNews(text, tone = "simple") {
+  const aiData = await getAIResponse(text, tone);
   return formatResponse(aiData);
 }
 
