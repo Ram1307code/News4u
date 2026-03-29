@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Environment variables (VERY IMPORTANT)
+.env
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build files (if any)
+dist/
+build/
+
+# VS Code settings (optional)
+.vscode/
