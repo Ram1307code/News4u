@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "News4u AI",
+  "version": "1.0",
+  "description": "AI powered news enhancement",
+
+  "permissions": ["activeTab", "scripting"],
+
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://economictimes.indiatimes.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
